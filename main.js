@@ -2,7 +2,7 @@
 
 $(document).ready(function () {
 
-    const backendURL = "https://vercel-web-backend.vercel.app/api"; // Reemplaza con la URL real de tu backend
+    const backendURL = "https://vercel-web-blush.vercel.app/api"; // Reemplaza con la URL real de tu backend
   
     $("#botonMostrarAlumnos").click(function () {
       $.ajax({
