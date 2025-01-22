@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gestión de Alumnos</title>
+  <link rel="stylesheet" href="estilos.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="main.js"></script>
+</head>
+<body>
+  <header class="header">
+    <h1>Gestión de Alumnos</h1>
+  </header>
+
+  <div class="main-container">
+    <div class="top-container">
+      <div class="top-left card">
+        <h2>Buscar Alumno</h2>
+        <input type="text" id="idAlumnoBuscado" placeholder="Ingrese el ID del alumno" class="input-text">
+        <button id="botonBuscarAlumno" class="btn btn-secundario">Buscar</button>
+        <div id="resultado"></div>
+      </div>
+      <div class="top-right card">
+        <h2>Agregar Alumno</h2>
+        <form id="formularioAddAlumnos">
+          <label for="alumnoId">ID:</label>
+          <input type="text" id="alumnoId" name="id" class="input-text" required>
+
+          <label for="nombreAlumno">Nombre:</label>
+          <input type="text" id="nombreAlumno" name="nombre" class="input-text" required>
+
+          <label for="apellidoAlumno">Apellido:</label>
+          <input type="text" id="apellidoAlumno" name="apellido" class="input-text" required>
+
+          <label for="telefonoAlumno">Teléfono:</label>
+          <input type="text" id="telefonoAlumno" name="telefono" class="input-text" required>
+
+          <button type="submit" class="btn btn-primario">Agregar</button>
+        </form>
+        <p id="addMensajeAlumno"></p>
+      </div>
+    </div>
+
+    <div class="bottom-container card">
+      <h2>Lista de Alumnos</h2>
+      <button id="botonMostrarAlumnos" class="btn btn-primario">Mostrar</button>
+      <ul id="listaAlumnos"></ul>
+    </div>
+  </div>
+</body>
+</html>
